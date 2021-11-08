@@ -1,0 +1,23 @@
+### In Memory Get Request
+GET  http://localhost:8080/in-memory?id=sample HTTP/1.1
+content-type: application/json
+
+### In Memory Post Request
+POST http://localhost:8080/in-memory HTTP/1.1
+content-type: application/json
+
+{
+    "key": "sample2",
+    "value": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+### MongoDb Post Request
+POST http://localhost:8080/1 HTTP/1.1
+content-type: application/json
+
+{
+    "startDate": "2016-01-26", 
+    "endDate": "2018-02-02", 
+    "minCount": 2700, 
+    "maxCount": 3000 
+}
